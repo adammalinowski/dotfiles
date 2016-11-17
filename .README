@@ -1,0 +1,5 @@
+see https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/ & https://news.ycombinator.com/item?id=11070797
+tl;dr 
+- use `dotfiles` command instead of `git` to manage dotfiles in home dir
+- home dir is working tree, ~/.dotfiles is .git, untracked files are ignored
+
