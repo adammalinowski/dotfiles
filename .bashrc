@@ -119,6 +119,14 @@ fi
 # for managing dotfiles
 alias dotfiles='/usr/bin/git --git-dir=/home/ad/.dotfiles/ --work-tree=/home/ad'
 
+# git aliases 
+alias wip='git commit -am "wip"'
+alias master='git checkout master'
+alias st='git status'
+# http://stackoverflow.com/questions/5188320/how-can-i-get-a-list-of-git-branches-ordered-by-most-recent-commit
+alias branches="git for-each-ref --sort=-committerdate --count=10 refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'"
+
+
 # include additional .bashrc if exists (stuff don't want to keep in dotfiles)
 if [ -f $HOME/.bashrc_other ]; then
     . $HOME/.bashrc_other
