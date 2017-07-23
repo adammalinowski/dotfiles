@@ -3,7 +3,7 @@
 	"auto_complete_commit_on_tab": true,
 	"auto_match_enabled": true,
 	"caret_style": "solid",
-	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
 	"detect_indentation": true,
 	"draw_indent_guides": true,
 	"ensure_newline_at_eof_on_save": true,
@@ -18,7 +18,7 @@
 	"folder_exclude_patterns":
 	[
 	],
-	"font_size": 11,
+	"font_size": 12,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
@@ -44,7 +44,7 @@
 	"show_full_path": true,
 	"show_minimap": false,
 	"tab_size": 2,
-	"trim_trailing_white_space_on_save": true,
+	"trim_trailing_white_space_on_save": false,
 	"wide_caret": true,
 	"word_wrap": true
 }
