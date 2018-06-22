@@ -121,11 +121,20 @@ alias dotfiles='/usr/bin/git --git-dir=/home/ad/.dotfiles/ --work-tree=/home/ad'
 
 # git aliases 
 alias wip='git commit -am "wip"'
+alias add='git add .'
+alias addwip='add; wip'
 alias master='git checkout master'
 alias st='git status'
+alias psh='git push'
+alias pll='git pull'
+alias mergeall='git add .; git merge --continue'
 # http://stackoverflow.com/questions/5188320/how-can-i-get-a-list-of-git-branches-ordered-by-most-recent-commit
 alias branches="git for-each-ref --sort=-committerdate --count=10 refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'"
 
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python 
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/projects
+source /usr/local/bin/virtualenvwrapper.sh
 
 # include additional .bashrc if exists (stuff don't want to keep in dotfiles)
 if [ -f $HOME/.bashrc_other ]; then
